@@ -1,0 +1,28 @@
+﻿{% load staticfiles %}
+<html>
+<head>
+  <meta charset="utf-8" http-equiv="encoding">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>闲人免进</title>
+  <link href="http://fonts.googleapis.com/css?family=Oswald:400|Merriweather+Sans:400" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="{% static 'css/standardize.css' %}">
+  <link rel="stylesheet" href="{% static 'css/index-grid.css' %}">
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
+  <link rel="shortcut icon" href="{% static 'image/favicon.ico' %}" />
+  <script src="{% static 'js/all.js' %}"></script>
+</head>
+<body>
+  <div id="title" class="text text-1 js--title">
+    <p>神秘花园</p>
+    <p>请君入瓮</p>
+</div>
+  <div id="blackground" >
+      <p id="Prompt" class="text text-2 js-pt">路人甲：天王盖地虎</p>
+  <input id="lp" class="_input js-login-input" name="login-pw" placeholder="宝塔镇河妖" type="password">
+  <button id="lb" class="_button js-login-button" onclick="submit()">登 录</button>
+  </div>
+
+  
+  
+</body>
+</html>

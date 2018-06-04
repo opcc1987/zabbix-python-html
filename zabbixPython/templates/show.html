@@ -1,0 +1,17 @@
+{% load staticfiles %}
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>月报内容</title>
+  <link rel="stylesheet" href="{% static 'css/standardize.css' %}">
+  <link rel="stylesheet" href="{% static 'css/show-grid.css' %}">
+  <link rel="stylesheet" href="{% static 'css/show.css' %}">
+</head>
+<body class="body page-show clearfix">
+   {% for post in posts %}
+   <p>{{ post.groupid }}</p>
+   <p>{{ post.name }}</p>
+   {% endfor %}
+</body>
+</html>
